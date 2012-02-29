@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Octopress Blog]]></title>
+  <link href="http://ransa.github.com/atom.xml" rel="self"/>
+  <link href="http://ransa.github.com/"/>
+  <updated>2012-02-29T23:19:51+02:00</updated>
+  <id>http://ransa.github.com/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Post]]></title>
+    <link href="http://ransa.github.com/blog/2012/02/29/first-post/"/>
+    <updated>2012-02-29T20:19:00+02:00</updated>
+    <id>http://ransa.github.com/blog/2012/02/29/first-post</id>
+    <content type="html"><![CDATA[<p>this is the first job
+next thing to do - deploy on github</p>
+]]></content>
+  </entry>
+  
+</feed>
