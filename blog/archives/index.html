@@ -9,7 +9,7 @@
   <meta name="author" content="Ron Raymonds">
 
   
-  <meta name="description" content="Blog Archive 2012 Cheat sheet and gotchas for OCTOPRESS Feb 29 2012 Recent Posts Cheat sheet and gotchas for OCTOPRESS On Delicious My Delicious &hellip;">
+  <meta name="description" content="Blog Archive 2012 Cheat sheet and gotchas for OCTOPRESS Feb 29 2012 Recent Posts Cheat sheet and gotchas for OCTOPRESS Latest Tweets Status updating &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -107,6 +107,22 @@
   </ul>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ronraymonds", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/ronraymonds" class="twitter-follow-button" data-show-count="false">Follow @ronraymonds</a>
+  
+</section>
 
 
 <section>

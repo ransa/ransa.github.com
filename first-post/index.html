@@ -10,7 +10,7 @@
 
   
   <meta name="description" content="First Post Feb 29th, 2012 Testing Octopress site
-deploy on github Feb 29th, 2012 Tweet Recent Posts Cheat sheet and gotchas for OCTOPRESS On &hellip;">
+deploy on github Feb 29th, 2012 Tweet Recent Posts Cheat sheet and gotchas for OCTOPRESS Latest &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -113,7 +113,7 @@ deploy on github Feb 29th, 2012 Tweet Recent Posts Cheat sheet and gotchas for O
       
         <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ransa.github.com/first-post/index.html" data-via="" data-counturl="http://ransa.github.com/first-post/index.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ransa.github.com/first-post/index.html" data-via="ronraymonds" data-counturl="http://ransa.github.com/first-post/index.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -143,6 +143,22 @@ deploy on github Feb 29th, 2012 Tweet Recent Posts Cheat sheet and gotchas for O
   </ul>
 </section>
 
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("ronraymonds", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/ronraymonds" class="twitter-follow-button" data-show-count="false">Follow @ronraymonds</a>
+  
+</section>
 
 
 <section>
