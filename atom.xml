@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ransa.github.com/atom.xml" rel="self"/>
   <link href="http://ransa.github.com/"/>
-  <updated>2012-03-01T13:16:38+02:00</updated>
+  <updated>2012-03-01T13:18:44+02:00</updated>
   <id>http://ransa.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,13 +14,11 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Cheat sheet]]></title>
+    <title type="html"><![CDATA[Cheat sheet and gotchas for OCTOPRESS ]]></title>
     <link href="http://ransa.github.com/cheatsheet/"/>
     <updated>2012-02-29T20:19:00+02:00</updated>
     <id>http://ransa.github.com/first-post</id>
-    <content type="html"><![CDATA[<p>OCTOPRESS</p>
-
-<h2>SETUP</h2>
+    <content type="html"><![CDATA[<h2>SETUP</h2>
 
 <ol>
 <li>git clone git://github.com/imathis/octopress.git sitename</li>
@@ -33,7 +31,7 @@
 <h2>CONFIG (_config.yml)</h2>
 
 <ol>
-<li>must change url,title, subtitle and author and enable some 3rd party services.</li>
+<li>Change url,title, subtitle and author and enable some 3rd party services.</li>
 <li>asides</li>
 <li><p>facebook</p></li>
 <li><p>create new post -
