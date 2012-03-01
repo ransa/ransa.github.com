@@ -9,9 +9,10 @@
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="this is the first job
-next thing to do - deploy on github
-">
+  <meta name="description" content="OCTOPRESS SETUP git clone git://github.com/imathis/octopress.git sitename
+cd sitename
+bundle install
+rake install[theme] CONFIG (_config.yml) must &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -72,7 +73,7 @@ next thing to do - deploy on github
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/02/29/first-post/">First Post</a></h1>
+      <h1 class="entry-title"><a href="/cheatsheet/">Cheat Sheet</a></h1>
     
     
       <p class="meta">
@@ -95,10 +96,50 @@ next thing to do - deploy on github
   </header>
 
 
-  <div class="entry-content"><p>this is the first job
-next thing to do - deploy on github</p>
-</div>
+  <div class="entry-content"><p>OCTOPRESS</p>
+
+<h2>SETUP</h2>
+
+<ol>
+<li>git clone git://github.com/imathis/octopress.git sitename</li>
+<li>cd sitename</li>
+<li>bundle install</li>
+<li>rake install[theme]</li>
+</ol>
+
+
+<h2>CONFIG (_config.yml)</h2>
+
+<ol>
+<li>must change url,title, subtitle and author and enable some 3rd party services.</li>
+<li>asides</li>
+<li><p>facebook</p></li>
+<li><p>create new post -
+rake new_post[&#8220;title&#8221;]</p></li>
+<li><p>create new page
+rake new_page[super-awesome]</p>
+
+<h1>creates /source/super-awesome/index.markdown</h1>
+
+rake new_page[super-awesome/page.html]
+
+<h1>creates /source/super-awesome/page.html</h1></li>
+<li><p>generate site</p></li>
+</ol>
+
+
+<p>rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000</p>
+
+<h1>YAML </h1>
+
+<p>excerpts - use  </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/cheatsheet/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -117,7 +158,7 @@ next thing to do - deploy on github</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/02/29/first-post/">First Post</a>
+        <a href="/cheatsheet/">Cheat sheet</a>
       </li>
     
   </ul>

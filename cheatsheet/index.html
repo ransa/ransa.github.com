@@ -5,13 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>First Post - My Octopress Blog</title>
+  <title>Cheat sheet - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
-  <meta name="description" content="this is the first job
-next thing to do - deploy on github
-">
+  <meta name="description" content="OCTOPRESS SETUP git clone git://github.com/imathis/octopress.git sitename
+cd sitename
+bundle install
+rake install[theme] CONFIG (_config.yml) must &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +21,7 @@ next thing to do - deploy on github
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ransa.github.com/blog/2012/02/29/first-post">
+  <link rel="canonical" href="http://ransa.github.com/cheatsheet">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -69,7 +70,7 @@ next thing to do - deploy on github
   
   <header>
     
-      <h1 class="entry-title">First Post</h1>
+      <h1 class="entry-title">Cheat Sheet</h1>
     
     
       <p class="meta">
@@ -92,8 +93,63 @@ next thing to do - deploy on github
   </header>
 
 
-<div class="entry-content"><p>this is the first job
-next thing to do - deploy on github</p>
+<div class="entry-content"><p>OCTOPRESS</p>
+
+<h2>SETUP</h2>
+
+<ol>
+<li>git clone git://github.com/imathis/octopress.git sitename</li>
+<li>cd sitename</li>
+<li>bundle install</li>
+<li>rake install[theme]</li>
+</ol>
+
+
+<h2>CONFIG (_config.yml)</h2>
+
+<ol>
+<li>must change url,title, subtitle and author and enable some 3rd party services.</li>
+<li>asides</li>
+<li><p>facebook</p></li>
+<li><p>create new post -
+rake new_post[&#8220;title&#8221;]</p></li>
+<li><p>create new page
+rake new_page[super-awesome]</p>
+
+<h1>creates /source/super-awesome/index.markdown</h1>
+
+rake new_page[super-awesome/page.html]
+
+<h1>creates /source/super-awesome/page.html</h1></li>
+<li><p>generate site</p></li>
+</ol>
+
+
+<p>rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000</p>
+
+<h1>YAML </h1>
+
+<p>excerpts - use  <!-- more --></p>
+
+<h1>One category</h1>
+
+<p>categories: Sass</p>
+
+<h1>Multiple categories example 1</h1>
+
+<p>categories: [CSS3, Sass, Media Queries]</p>
+
+<h1>Multiple categories example 2</h1>
+
+<p>categories:
+- CSS3
+- Sass
+- Media Queries</p>
+
+<p>liquid tags:
+https://github.com/Shopify/liquid/wiki/Liquid-for-Designers</p>
 </div>
 
 
@@ -124,7 +180,7 @@ next thing to do - deploy on github</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ransa.github.com/blog/2012/02/29/first-post/" data-via="" data-counturl="http://ransa.github.com/blog/2012/02/29/first-post/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ransa.github.com/cheatsheet/" data-via="" data-counturl="http://ransa.github.com/cheatsheet/" >Tweet</a>
   
   
   
@@ -147,7 +203,7 @@ next thing to do - deploy on github</p>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2012/02/29/first-post/">First Post</a>
+        <a href="/cheatsheet/">Cheat sheet</a>
       </li>
     
   </ul>

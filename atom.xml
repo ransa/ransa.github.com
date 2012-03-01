@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ransa.github.com/atom.xml" rel="self"/>
   <link href="http://ransa.github.com/"/>
-  <updated>2012-03-01T13:11:03+02:00</updated>
+  <updated>2012-03-01T13:16:38+02:00</updated>
   <id>http://ransa.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -14,12 +14,67 @@
 
   
   <entry>
-    <title type="html"><![CDATA[First Post]]></title>
-    <link href="http://ransa.github.com/blog/2012/02/29/first-post/"/>
+    <title type="html"><![CDATA[Cheat sheet]]></title>
+    <link href="http://ransa.github.com/cheatsheet/"/>
     <updated>2012-02-29T20:19:00+02:00</updated>
-    <id>http://ransa.github.com/blog/2012/02/29/first-post</id>
-    <content type="html"><![CDATA[<p>this is the first job
-next thing to do - deploy on github</p>
+    <id>http://ransa.github.com/first-post</id>
+    <content type="html"><![CDATA[<p>OCTOPRESS</p>
+
+<h2>SETUP</h2>
+
+<ol>
+<li>git clone git://github.com/imathis/octopress.git sitename</li>
+<li>cd sitename</li>
+<li>bundle install</li>
+<li>rake install[theme]</li>
+</ol>
+
+
+<h2>CONFIG (_config.yml)</h2>
+
+<ol>
+<li>must change url,title, subtitle and author and enable some 3rd party services.</li>
+<li>asides</li>
+<li><p>facebook</p></li>
+<li><p>create new post -
+rake new_post[&#8220;title&#8221;]</p></li>
+<li><p>create new page
+rake new_page[super-awesome]</p>
+
+<h1>creates /source/super-awesome/index.markdown</h1>
+
+rake new_page[super-awesome/page.html]
+
+<h1>creates /source/super-awesome/page.html</h1></li>
+<li><p>generate site</p></li>
+</ol>
+
+
+<p>rake generate   # Generates posts and pages into the public directory
+rake watch      # Watches source/ and sass/ for changes and regenerates
+rake preview    # Watches, and mounts a webserver at http://localhost:4000</p>
+
+<h1>YAML </h1>
+
+<p>excerpts - use  <!-- more --></p>
+
+<h1>One category</h1>
+
+<p>categories: Sass</p>
+
+<h1>Multiple categories example 1</h1>
+
+<p>categories: [CSS3, Sass, Media Queries]</p>
+
+<h1>Multiple categories example 2</h1>
+
+<p>categories:
+- CSS3
+- Sass
+- Media Queries</p>
+
+<p>liquid tags:
+https://github.com/Shopify/liquid/wiki/Liquid-for-Designers</p>
 ]]></content>
   </entry>
   
