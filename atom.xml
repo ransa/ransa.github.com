@@ -4,7 +4,7 @@
   <title><![CDATA[My Octopress Blog]]></title>
   <link href="http://ransa.github.com/atom.xml" rel="self"/>
   <link href="http://ransa.github.com/"/>
-  <updated>2012-03-01T13:18:44+02:00</updated>
+  <updated>2012-03-01T13:19:21+02:00</updated>
   <id>http://ransa.github.com/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -37,15 +37,19 @@
 <li><p>create new post -
 rake new_post[&#8220;title&#8221;]</p></li>
 <li><p>create new page
-rake new_page[super-awesome]</p>
-
-<h1>creates /source/super-awesome/index.markdown</h1>
-
-rake new_page[super-awesome/page.html]
-
-<h1>creates /source/super-awesome/page.html</h1></li>
-<li><p>generate site</p></li>
+rake new_page[super-awesome]</p></li>
 </ol>
+
+
+<p><em>creates /source/super-awesome/index.markdown</em></p>
+
+<p>rake new_page[super-awesome/page.html]</p>
+
+<p><em>creates /source/super-awesome/page.html</em></p>
+
+<ul>
+<li>generate site</li>
+</ul>
 
 
 <p>rake generate   # Generates posts and pages into the public directory
